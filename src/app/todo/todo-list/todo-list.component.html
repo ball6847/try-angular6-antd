@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let todo of todos; let i=index" [class.completed]="todo.completed">
+    <label nz-checkbox [(ngModel)]="models[todo.id]" (ngModelChange)="toggle.emit(todo)">{{ todo.title }}</label>
+    <button (click)="remove.emit(todo)">remove</button>
+  </li>
+</ul>

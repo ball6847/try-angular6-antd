@@ -1,0 +1,12 @@
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.completed ::ng-deep span {
+  text-decoration: line-through;
+}

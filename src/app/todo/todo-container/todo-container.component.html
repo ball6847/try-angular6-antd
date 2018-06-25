@@ -1,0 +1,4 @@
+<app-todo-input (todoSubmit)="addNewTodo($event)"></app-todo-input>
+<app-todo-filter (filterChange)="filterChange.emit($event)"></app-todo-filter>
+<app-todo-list [todos]="todos | async" (toggle)="toggleTodo($event)" (remove)="removeTodo($event)"></app-todo-list>
+<app-todo-status [total]="total | async" [completed]="completed | async"></app-todo-status>
