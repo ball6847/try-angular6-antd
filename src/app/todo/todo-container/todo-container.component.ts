@@ -10,9 +10,10 @@ import { TodoItem, TodoService } from '../todo.service';
 })
 export class TodoContainerComponent implements OnInit {
   todos: Observable<TodoItem[]>;
-  filterChange = new EventEmitter<string>();
   total: Observable<number>;
   completed: Observable<number>;
+
+  filterChange = new EventEmitter<string>();
 
   constructor(private todoService: TodoService) {}
 
