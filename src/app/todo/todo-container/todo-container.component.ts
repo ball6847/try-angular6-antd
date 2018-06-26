@@ -28,7 +28,7 @@ export class TodoContainerComponent implements OnInit {
       .pipe(map(todos => todos.filter(todo => todo.completed).length));
   }
 
-  addNewTodo(todo: string) {
+  addTodo(todo: string) {
     this.todoService.addTodo(todo);
   }
 
